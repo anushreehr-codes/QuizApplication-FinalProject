@@ -8,7 +8,7 @@ public class UserDAO {
         try {
             Connection con = DBConnection.getConnection();
             PreparedStatement ps = con.prepareStatement(
-                "SELECT * FROM users WHERE username=? AND password=?"
+                "SELECT * FROM users WHERE username=root AND password=Anushree@123"
             );
             ps.setString(1, username);
             ps.setString(2, password);
